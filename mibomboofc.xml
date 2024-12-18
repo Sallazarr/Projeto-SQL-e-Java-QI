@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Tempo de geração: 10/12/2024 às 02:13
+- Versão do servidor: 10.4.32-MariaDB
+- Versão do PHP: 8.2.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="mibomboofc" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="cliente">
+                CREATE TABLE `cliente` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `NOME` varchar(60) DEFAULT NULL,
+                  `CPF` varchar(11) DEFAULT NULL,
+                  `DATANASC` date DEFAULT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="produto">
+                CREATE TABLE `produto` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `NOME` varchar(50) DEFAULT NULL,
+                  `MARCA` varchar(30) DEFAULT NULL,
+                  `PRECO` float DEFAULT NULL,
+                  `CODBARRA` varchar(13) DEFAULT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="venda">
+                CREATE TABLE `venda` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `CODCLIENTE` varchar(60) DEFAULT NULL,
+                  `CODPRODUTO` varchar(30) DEFAULT NULL,
+                  `PRECO` float DEFAULT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Banco de dados: 'mibomboofc'
+    -->
+    <database name="mibomboofc">
+        <!-- Tabela cliente -->
+        <table name="cliente">
+            <column name="ID">1</column>
+            <column name="NOME">João Guilherme Bernardo Mayer</column>
+            <column name="CPF">05007198007</column>
+            <column name="DATANASC">2005-10-02</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">2</column>
+            <column name="NOME">Henrique Salazar da Silva</column>
+            <column name="CPF">87608497215</column>
+            <column name="DATANASC">2005-10-06</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">3</column>
+            <column name="NOME">Bernardo Nunes</column>
+            <column name="CPF">57894687524</column>
+            <column name="DATANASC">2005-04-13</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">4</column>
+            <column name="NOME">Gean Soares Mello</column>
+            <column name="CPF">86978445721</column>
+            <column name="DATANASC">2005-06-23</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">6</column>
+            <column name="NOME">Roberval Messias da Silva</column>
+            <column name="CPF">57821368954</column>
+            <column name="DATANASC">1357-11-13</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">7</column>
+            <column name="NOME">Sorriso Ronaldo</column>
+            <column name="CPF">86794231578</column>
+            <column name="DATANASC">2000-03-04</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">8</column>
+            <column name="NOME">Demétrio Ribeiro</column>
+            <column name="CPF">94578154682</column>
+            <column name="DATANASC">1990-11-18</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">9</column>
+            <column name="NOME">Don Quixote</column>
+            <column name="CPF">58246791245</column>
+            <column name="DATANASC">1910-04-05</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">10</column>
+            <column name="NOME">Dj Ramon Sucesso</column>
+            <column name="CPF">76194321574</column>
+            <column name="DATANASC">2000-09-29</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">11</column>
+            <column name="NOME">Felipe Neto</column>
+            <column name="CPF">65498732182</column>
+            <column name="DATANASC">1988-01-21</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">12</column>
+            <column name="NOME">Davy Jones</column>
+            <column name="CPF">24687532195</column>
+            <column name="DATANASC">1988-01-20</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">13</column>
+            <column name="NOME">Velma</column>
+            <column name="CPF">94678785721</column>
+            <column name="DATANASC">2001-02-10</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">14</column>
+            <column name="NOME">Fred</column>
+            <column name="CPF">94685752521</column>
+            <column name="DATANASC">2000-05-21</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">15</column>
+            <column name="NOME">Daphne</column>
+            <column name="CPF">35246452878</column>
+            <column name="DATANASC">2002-09-20</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">16</column>
+            <column name="NOME">Salsicha</column>
+            <column name="CPF">64879585721</column>
+            <column name="DATANASC">2005-12-02</column>
+        </table>
+        <table name="cliente">
+            <column name="ID">17</column>
+            <column name="NOME">Scoobyloo</column>
+            <column name="CPF">21245353626</column>
+            <column name="DATANASC">2100-12-25</column>
+        </table>
+        <!-- Tabela produto -->
+        <table name="produto">
+            <column name="ID">1</column>
+            <column name="NOME">Pringles</column>
+            <column name="MARCA">ElmaChips</column>
+            <column name="PRECO">10.9</column>
+            <column name="CODBARRA">7895564287316</column>
+        </table>
+        <table name="produto">
+            <column name="ID">2</column>
+            <column name="NOME">Ruffles</column>
+            <column name="MARCA">ElmaChips</column>
+            <column name="PRECO">7.9</column>
+            <column name="CODBARRA">7895564872914</column>
+        </table>
+        <table name="produto">
+            <column name="ID">3</column>
+            <column name="NOME">Doritos</column>
+            <column name="MARCA">ElmaChips</column>
+            <column name="PRECO">9.9</column>
+            <column name="CODBARRA">7895549827505</column>
+        </table>
+        <table name="produto">
+            <column name="ID">4</column>
+            <column name="NOME">Fandangos</column>
+            <column name="MARCA">ElmaChips</column>
+            <column name="PRECO">4</column>
+            <column name="CODBARRA">7895568978487</column>
+        </table>
+        <table name="produto">
+            <column name="ID">5</column>
+            <column name="NOME">Passatempo</column>
+            <column name="MARCA">Nestle</column>
+            <column name="PRECO">3.5</column>
+            <column name="CODBARRA">7894668213545</column>
+        </table>
+        <table name="produto">
+            <column name="ID">6</column>
+            <column name="NOME">Prestigio</column>
+            <column name="MARCA">Nestle</column>
+            <column name="PRECO">7.5</column>
+            <column name="CODBARRA">7895528794623</column>
+        </table>
+        <table name="produto">
+            <column name="ID">7</column>
+            <column name="NOME">Oreo</column>
+            <column name="MARCA">Mondelez</column>
+            <column name="PRECO">5.5</column>
+            <column name="CODBARRA">7895579232466</column>
+        </table>
+        <table name="produto">
+            <column name="ID">8</column>
+            <column name="NOME">Milka</column>
+            <column name="MARCA">Mondelez</column>
+            <column name="PRECO">13.5</column>
+            <column name="CODBARRA">7895578231215</column>
+        </table>
+        <table name="produto">
+            <column name="ID">9</column>
+            <column name="NOME">Criativo</column>
+            <column name="MARCA">Minecraft</column>
+            <column name="PRECO">0</column>
+            <column name="CODBARRA">7898246135879</column>
+        </table>
+        <table name="produto">
+            <column name="ID">10</column>
+            <column name="NOME">GTA VI</column>
+            <column name="MARCA">Rockstar</column>
+            <column name="PRECO">500</column>
+            <column name="CODBARRA">7898576921357</column>
+        </table>
+        <table name="produto">
+            <column name="ID">11</column>
+            <column name="NOME">Scooby Lanches</column>
+            <column name="MARCA">Scooby</column>
+            <column name="PRECO">12</column>
+            <column name="CODBARRA">7895864642138</column>
+        </table>
+        <!-- Tabela venda -->
+        <table name="venda">
+            <column name="ID">1</column>
+            <column name="CODCLIENTE">3</column>
+            <column name="CODPRODUTO">2</column>
+            <column name="PRECO">20</column>
+        </table>
+        <table name="venda">
+            <column name="ID">2</column>
+            <column name="CODCLIENTE">1</column>
+            <column name="CODPRODUTO">4</column>
+            <column name="PRECO">5</column>
+        </table>
+        <table name="venda">
+            <column name="ID">3</column>
+            <column name="CODCLIENTE">4</column>
+            <column name="CODPRODUTO">5</column>
+            <column name="PRECO">3.5</column>
+        </table>
+        <table name="venda">
+            <column name="ID">4</column>
+            <column name="CODCLIENTE">6</column>
+            <column name="CODPRODUTO">1</column>
+            <column name="PRECO">10</column>
+        </table>
+        <table name="venda">
+            <column name="ID">5</column>
+            <column name="CODCLIENTE">7</column>
+            <column name="CODPRODUTO">7</column>
+            <column name="PRECO">7</column>
+        </table>
+        <table name="venda">
+            <column name="ID">6</column>
+            <column name="CODCLIENTE">9</column>
+            <column name="CODPRODUTO">8</column>
+            <column name="PRECO">14</column>
+        </table>
+        <table name="venda">
+            <column name="ID">7</column>
+            <column name="CODCLIENTE">1</column>
+            <column name="CODPRODUTO">10</column>
+            <column name="PRECO">250</column>
+        </table>
+        <table name="venda">
+            <column name="ID">8</column>
+            <column name="CODCLIENTE">2</column>
+            <column name="CODPRODUTO">3</column>
+            <column name="PRECO">10</column>
+        </table>
+        <table name="venda">
+            <column name="ID">9</column>
+            <column name="CODCLIENTE">11</column>
+            <column name="CODPRODUTO">9</column>
+            <column name="PRECO">1</column>
+        </table>
+        <table name="venda">
+            <column name="ID">10</column>
+            <column name="CODCLIENTE">12</column>
+            <column name="CODPRODUTO">10</column>
+            <column name="PRECO">780</column>
+        </table>
+    </database>
+</pma_xml_export>
